@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frete UNINASSAU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">UNINASSAU</div>
+
+        <div class="titulo-header">
+            <span>Serviço de entrega</span>
+            <strong>Calculadora de Frete</strong>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="inicio">
+
+            <div class="titulo">
+                <span>ENTREGA RÁPIDA E PRÁTICA</span>
+                <h1>Calcule o valor do seu frete</h1>
+                <p>
+                    Informe o CEP do destino e consulte o endereço,
+                    a distância estimada e o valor da entrega.
+                </p>
+            </div>
+
+            <div class="origem">
+                <div>
+                    <span>LOCAL DE ORIGEM</span>
+                    <strong>UNINASSAU Parangaba</strong>
+                </div>
+
+                <p>Fortaleza - CE</p>
+            </div>
+
+            <div class="formulario">
+
+                <label for="cep">CEP de destino</label>
+
+                <div class="entrada">
+                    <input
+                        type="text"
+                        id="cep"
+                        placeholder="Digite o CEP"
+                        maxlength="9"
+                    >
+
+                    <button id="calcular">
+                        Calcular frete
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="resultado" class="resultado">
+
+            <div class="resultado-titulo">
+                <span>CONSULTA</span>
+                <h2>Detalhes da entrega</h2>
+            </div>
+
+            <div class="informacoes">
+
+                <div class="info">
+                    <span>ENDEREÇO</span>
+                    <strong id="endereco">-</strong>
+                </div>
+
+                <div class="info">
+                    <span>CIDADE</span>
+                    <strong id="cidade">-</strong>
+                </div>
+
+                <div class="info">
+                    <span>DISTÂNCIA ESTIMADA</span>
+                    <strong id="distancia">-</strong>
+                </div>
+
+                <div class="info">
+                    <span>ESTIMATIVA UBER MOTO</span>
+                    <strong id="uber">-</strong>
+                </div>
+
+            </div>
+
+            <div class="frete-final">
+                <div>
+                    <span>VALOR ESTIMADO DO FRETE</span>
+                    <strong id="frete">-</strong>
+                </div>
+
+                <p>
+                    Valor calculado com base na distância estimada
+                    entre a UNINASSAU Parangaba e o destino.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <strong>UNINASSAU Parangaba</strong>
+        <p>Calculadora de frete para fins acadêmicos</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
